@@ -1,0 +1,57 @@
+table 'Tabla Dólar'
+	lineageTag: 0ff0c5fb-2578-4656-8646-4a7631b7c5b7
+
+	column Fecha
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 262e8d56-e1dd-46ef-90db-67201734e055
+		summarizeBy: none
+		sourceColumn: Fecha
+
+		variation Variación
+			isDefault
+			relationship: 0a04150f-9f57-4bd7-a7d2-44c49f97bece
+			defaultHierarchy: LocalDateTable_5ecf25fa-f594-4ba3-8f82-e60220070282.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Valor Dólar'
+		dataType: double
+		lineageTag: 9cc7c6e8-ab20-445a-90eb-8e310594212c
+		summarizeBy: sum
+		sourceColumn: Valor Dólar
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'Tabla Dólar' = m
+		mode: import
+		source =
+				let
+				    Origen = Web.BrowserContents("https://si3.bcentral.cl/indicadoressiete/secure/Serie.aspx?gcode=PRE_TCO&param=RABmAFYAWQB3AGYAaQBuAEkALQAzADUAbgBNAGgAaAAkADUAVwBQAC4AbQBYADAARwBOAGUAYwBjACMAQQBaAHAARgBhAGcAUABTAGUAdwA1ADQAMQA0AE0AawBLAF8AdQBDACQASABzAG0AXwA2AHQAawBvAFcAZwBKAEwAegBzAF8AbgBMAHIAYgBDAC4ARQA3AFUAVwB4AFIAWQBhAEEAOABkAHkAZwAxAEEARAA="),
+				    #"Tabla extraída a partir de HTML" = Html.Table(Origen, {{"Column1", "TABLE[id='gr'] > * > TR > :nth-child(1)"}, {"Column2", "TABLE[id='gr'] > * > TR > :nth-child(2)"}, {"Column3", "TABLE[id='gr'] > * > TR > :nth-child(3)"}, {"Column4", "TABLE[id='gr'] > * > TR > :nth-child(4)"}, {"Column5", "TABLE[id='gr'] > * > TR > :nth-child(5)"}, {"Column6", "TABLE[id='gr'] > * > TR > :nth-child(6)"}, {"Column7", "TABLE[id='gr'] > * > TR > :nth-child(7)"}, {"Column8", "TABLE[id='gr'] > * > TR > :nth-child(8)"}, {"Column9", "TABLE[id='gr'] > * > TR > :nth-child(9)"}, {"Column10", "TABLE[id='gr'] > * > TR > :nth-child(10)"}, {"Column11", "TABLE[id='gr'] > * > TR > :nth-child(11)"}, {"Column12", "TABLE[id='gr'] > * > TR > :nth-child(12)"}, {"Column13", "TABLE[id='gr'] > * > TR > :nth-child(13)"}}, [RowSelector="TABLE[id='gr'] > * > TR"]),
+				    #"Encabezados promovidos" = Table.PromoteHeaders(#"Tabla extraída a partir de HTML", [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Día", Int64.Type}, {"Enero", type number}, {"Febrero", type number}, {"Marzo", type number}, {"Abril", type number}, {"Mayo", type number}, {"Junio", type number}, {"Julio", type number}, {"Agosto", type text}, {"Septiembre", type text}, {"Octubre", type text}, {"Noviembre", type text}, {"Diciembre", type text}}),
+				    #"Valor reemplazado" = Table.ReplaceValue(#"Tipo cambiado","",null,Replacer.ReplaceValue,{"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"}),
+				    #"Valor reemplazado1" = Table.ReplaceValue(#"Valor reemplazado",null,0,Replacer.ReplaceValue,{"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"}),
+				    #"Tipo cambiado1" = Table.TransformColumnTypes(#"Valor reemplazado1",{{"Enero", type number}, {"Febrero", type number}, {"Marzo", type number}, {"Abril", type number}, {"Mayo", type number}, {"Junio", type number}, {"Julio", type number}, {"Agosto", type number}, {"Septiembre", type number}, {"Octubre", type number}, {"Noviembre", type number}, {"Diciembre", type number}}),
+				    #"Columna de anulación de dinamización" = Table.UnpivotOtherColumns(#"Tipo cambiado1", {"Día"}, "Atributo", "Valor"),
+				    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Columna de anulación de dinamización",{{"Atributo", "Mes"}}),
+				    #"Columnas combinadas" = Table.CombineColumns(Table.TransformColumnTypes(#"Columnas con nombre cambiado", {{"Día", type text}}, "es-CL"),{"Día", "Mes"},Combiner.CombineTextByDelimiter("-", QuoteStyle.None),"Fecha"),
+				    #"Sufijo agregado" = Table.TransformColumns(#"Columnas combinadas", {{"Fecha", each _ & "-2025", type text}}),
+				    #"Tipo cambiado2" = Table.TransformColumnTypes(#"Sufijo agregado",{{"Fecha", type date}}),
+				    #"Errores quitados" = Table.RemoveRowsWithErrors(#"Tipo cambiado2", {"Fecha"}),
+				    #"Filas ordenadas" = Table.Sort(#"Errores quitados",{{"Fecha", Order.Descending}}),
+				    #"Valor reemplazado2" = Table.ReplaceValue(#"Filas ordenadas",0,null,Replacer.ReplaceValue,{"Valor"}),
+				    #"Rellenar hacia arriba" = Table.FillUp(#"Valor reemplazado2",{"Valor"}),
+				    #"Columnas con nombre cambiado1" = Table.RenameColumns(#"Rellenar hacia arriba",{{"Valor", "Valor Dólar"}})
+				in
+				    #"Columnas con nombre cambiado1"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

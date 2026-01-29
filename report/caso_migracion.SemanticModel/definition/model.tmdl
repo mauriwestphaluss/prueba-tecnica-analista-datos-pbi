@@ -1,0 +1,28 @@
+model Model
+	culture: es-MX
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-CL
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["Clientes","Peliculas","Datos","Tabla Dólar","Medidas"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Clientes
+ref table Peliculas
+ref table Datos
+ref table DateTableTemplate_de1fa0b7-663d-47a5-a65e-a35dae3743df
+ref table LocalDateTable_aab5d653-2040-47e2-82df-a7266a146f91
+ref table 'Tabla Dólar'
+ref table LocalDateTable_5ecf25fa-f594-4ba3-8f82-e60220070282
+ref table Medidas
+ref table LocalDateTable_237b03fc-f61c-4f75-983a-cddc7936af90
+
+ref role GENERO_NORMAL
+
+ref cultureInfo es-MX
+

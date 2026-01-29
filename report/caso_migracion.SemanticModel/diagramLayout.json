@@ -1,0 +1,100 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 729.38305001469371,
+            "y": 0
+          },
+          "nodeIndex": "Clientes",
+          "nodeLineageTag": "4aece616-a908-474e-9f76-edb98adc8659",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 329.3255819140287,
+            "y": 160.62793783746983
+          },
+          "nodeIndex": "Datos",
+          "nodeLineageTag": "cc55901e-3140-4167-9b60-721303c5bab1",
+          "size": {
+            "height": 468,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "Peliculas",
+          "nodeLineageTag": "5d45bb68-dbfa-4070-bf34-dc1344e7951d",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 657.35548985450646,
+            "y": 642.390517765573
+          },
+          "nodeIndex": "Calendario",
+          "nodeLineageTag": "046df453-4354-4303-8dfb-489c891c14b0",
+          "size": {
+            "height": 200,
+            "width": 237
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 1017.1133942596604,
+            "y": 301.90542782575614
+          },
+          "nodeIndex": "Tabla Dólar",
+          "nodeLineageTag": "0ff0c5fb-2578-4656-8646-4a7631b7c5b7",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 1406.3830500146937,
+            "y": 324.15000152587891
+          },
+          "nodeIndex": "Medidas",
+          "nodeLineageTag": "72887eff-e0b8-4393-8f1d-f7ffc40e3a67",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 2
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 50.346892102823141,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

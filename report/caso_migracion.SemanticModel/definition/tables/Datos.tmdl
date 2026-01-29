@@ -1,0 +1,260 @@
+table Datos
+	lineageTag: cc55901e-3140-4167-9b60-721303c5bab1
+
+	column Id_Arriendo
+		dataType: int64
+		formatString: 0
+		lineageTag: 76ea7dee-a355-4a8d-9e6c-e0427d90b30f
+		summarizeBy: sum
+		sourceColumn: Id_Arriendo
+
+		annotation SummarizationSetBy = Automatic
+
+	column RUT
+		dataType: string
+		lineageTag: 9119a763-6665-4807-a6b3-084a0b4d2ef7
+		summarizeBy: none
+		sourceColumn: RUT
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Apellido Paterno'
+		dataType: string
+		lineageTag: 46f5cc6b-0952-410f-b2ed-5a0a31180095
+		summarizeBy: none
+		sourceColumn: Apellido Paterno
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Apellido Materno'
+		dataType: string
+		lineageTag: 9ef900e8-9009-4487-9f75-f52e4112c45d
+		summarizeBy: none
+		sourceColumn: Apellido Materno
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nombres
+		dataType: string
+		lineageTag: db3710e6-b448-4de4-8535-ce5aecfb9166
+		summarizeBy: none
+		sourceColumn: Nombres
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dirección
+		dataType: string
+		lineageTag: 49143b78-01e3-4570-a88e-b07e2ba7b02a
+		summarizeBy: none
+		sourceColumn: Dirección
+
+		annotation SummarizationSetBy = Automatic
+
+	column Id_Comuna
+		dataType: int64
+		formatString: 0
+		lineageTag: 4d12ae8b-db57-408e-84ad-75b52ba58db4
+		summarizeBy: sum
+		sourceColumn: Id_Comuna
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nombre Comuna'
+		dataType: string
+		lineageTag: 10366a54-01c1-4c6e-8ab2-8e3350ce4740
+		summarizeBy: none
+		sourceColumn: Nombre Comuna
+
+		annotation SummarizationSetBy = Automatic
+
+	column Id_Categoría
+		dataType: int64
+		formatString: 0
+		lineageTag: b2790a37-ae9f-4bc6-9cbd-0b2c639f9d6b
+		summarizeBy: sum
+		sourceColumn: Id_Categoría
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nombre Categoría'
+		dataType: string
+		lineageTag: 3be96425-40cb-4e1b-87cd-c2571d7d0938
+		summarizeBy: none
+		sourceColumn: Nombre Categoría
+
+		annotation SummarizationSetBy = Automatic
+
+	column Id_Género
+		dataType: int64
+		formatString: 0
+		lineageTag: ad7fcb29-9bcb-4dd8-bb00-7bb9dc2adfd9
+		summarizeBy: sum
+		sourceColumn: Id_Género
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nombre Género'
+		dataType: string
+		lineageTag: 139c21f8-f072-44db-8241-1be4c310fea0
+		summarizeBy: none
+		sourceColumn: Nombre Género
+
+		annotation SummarizationSetBy = Automatic
+
+	column Id_Pelicula
+		dataType: int64
+		formatString: 0
+		lineageTag: 81601772-0a3e-493b-b1ca-3f294299e822
+		summarizeBy: none
+		sourceColumn: Id_Pelicula
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nombre Pelicula'
+		dataType: string
+		lineageTag: 54c75470-8b32-4247-b750-ecac87800bf5
+		summarizeBy: none
+		sourceColumn: Nombre Pelicula
+
+		annotation SummarizationSetBy = Automatic
+
+	column Año
+		dataType: int64
+		formatString: 0
+		lineageTag: ef78c350-27f4-4dc8-a83a-578b6b2619a7
+		summarizeBy: sum
+		sourceColumn: Año
+
+		annotation SummarizationSetBy = Automatic
+
+	column Protagonistas
+		dataType: string
+		lineageTag: f25afd01-6bb0-475c-b073-0b55cb961315
+		summarizeBy: none
+		sourceColumn: Protagonistas
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fecha_Arriendo
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: ed822e9b-f969-4d61-851e-500808f79a5e
+		summarizeBy: none
+		sourceColumn: Fecha_Arriendo
+
+		variation Variación
+			isDefault
+			relationship: 82921132-8cb1-417f-aeb7-acf847cbd3b3
+			defaultHierarchy: LocalDateTable_237b03fc-f61c-4f75-983a-cddc7936af90.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Director
+		dataType: string
+		lineageTag: 4580684b-b4bc-4390-aa1d-73b7d19ae083
+		summarizeBy: none
+		sourceColumn: Director
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Cantidad de Copias'
+		dataType: int64
+		formatString: 0
+		lineageTag: 2e447bc2-b0fe-49eb-90eb-85aaaacfa9be
+		summarizeBy: sum
+		sourceColumn: Cantidad de Copias
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Días Arriendo'
+		dataType: int64
+		formatString: 0
+		lineageTag: e6c1e4d4-a3db-42ce-b523-440f1f31ef79
+		summarizeBy: sum
+		sourceColumn: Días Arriendo
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Valor Arriendo Diario'
+		dataType: int64
+		formatString: 0
+		lineageTag: 60cb3ff2-9267-4e32-a365-e0aefec3b398
+		summarizeBy: sum
+		sourceColumn: Valor Arriendo Diario
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fecha_Devolución
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 79eb8cab-f170-4533-9fd8-380c196ac2d0
+		summarizeBy: none
+		sourceColumn: Fecha_Devolución
+
+		variation Variación
+			isDefault
+			relationship: 0a83d16d-a755-47d3-b42d-66a02f63e834
+			defaultHierarchy: LocalDateTable_aab5d653-2040-47e2-82df-a7266a146f91.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Década
+		dataType: string
+		lineageTag: 089b4b9f-861a-4405-9740-30959c921191
+		summarizeBy: none
+		sourceColumn: Década
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'RUT sin máscara'
+		dataType: string
+		lineageTag: 09367dd6-4eff-4431-8ab2-9d494fe3fac2
+		summarizeBy: none
+		sourceColumn: RUT sin máscara
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Valor Arriendo Diario US$' = ```
+			
+			DIVIDE(
+			    Datos[Valor Arriendo Diario],
+			LOOKUPVALUE(
+			    'Tabla Dólar'[Valor Dólar], 
+			    'Tabla Dólar'[Fecha],
+			    TODAY()
+			    )
+			    ,BLANK()
+			)
+			```
+		formatString: "US$"#,##0.00
+		lineageTag: 3d2439d6-0d78-4bd1-a58c-8503374f9870
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isCustom":true}
+
+	partition Datos = m
+		mode: import
+		source =
+				let
+				    Origen = Folder.Files("C:\Users\mauri\OneDrive\Escritorio\Prueba 1 PB Avanzado\Datos"),
+				    #"C:\Users\mauri\OneDrive\Escritorio\Prueba 1 PB Avanzado\Datos\_FactArriendos xlsx" = Origen{[#"Folder Path"="C:\Users\mauri\OneDrive\Escritorio\Prueba 1 PB Avanzado\Datos\",Name="FactArriendos.xlsx"]}[Content],
+				    #"Libro de Excel importado" = Excel.Workbook(#"C:\Users\mauri\OneDrive\Escritorio\Prueba 1 PB Avanzado\Datos\_FactArriendos xlsx"),
+				    Datos_Sheet = #"Libro de Excel importado"{[Item="Datos",Kind="Sheet"]}[Data],
+				    #"Columnas quitadas" = Table.RemoveColumns(Datos_Sheet,{"Column23"}),
+				    #"Encabezados promovidos" = Table.PromoteHeaders(#"Columnas quitadas", [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Id_Arriendo", Int64.Type}, {"RUT", type text}, {"Apellido Paterno", type text}, {"Apellido Materno", type text}, {"Nombres", type text}, {"Dirección", type text}, {"Id_Comuna", Int64.Type}, {"Nombre Comuna", type text}, {"Id_Categoría", Int64.Type}, {"Nombre Categoría", type text}, {"Id_Género", Int64.Type}, {"Nombre Género", type text}, {"Id_Pelicula", Int64.Type}, {"Nombre Pelicula", type text}, {"Año", Int64.Type}, {"Protagonistas", type text}, {"Fecha_Arriendo", type date}, {"Director", type text}, {"Cantidad de Copias", Int64.Type}, {"Días Arriendo", Int64.Type}, {"Valor Arriendo Diario", Int64.Type}, {"Fecha_Devolución", type date}}),
+				    #"Rango insertado" = Table.AddColumn(#"Tipo cambiado", "Década", each let rangeSize = 10, offset = 0, inclusive = false, rangeIndex = Number.RoundDown(([Año] - offset) / rangeSize) in Text.From(rangeIndex * rangeSize + offset, "es-CL") & "-" & Text.From((rangeIndex + 1) * rangeSize + offset - (if inclusive then 1 else 0), "es-CL"), type text),
+				    #"Caracteres insertados eliminados" = Table.AddColumn(#"Rango insertado", "RUT sin máscara", each Text.Remove([RUT], {"-", "."}), type text)
+				in
+				    #"Caracteres insertados eliminados"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

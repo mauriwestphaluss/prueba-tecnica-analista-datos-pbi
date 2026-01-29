@@ -1,0 +1,4218 @@
+cultureInfo es-MX
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "cliente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Clientes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cliente": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cliente.rut": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Clientes",
+			          "ConceptualProperty": "RUT"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rut": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "runnel": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pothole": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "furrow": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "groove": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "channel": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "cliente.paterno": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Clientes",
+			          "ConceptualProperty": "Paterno"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "paterno": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cliente.materno": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Clientes",
+			          "ConceptualProperty": "Materno"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "materno": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cliente.nombre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Clientes",
+			          "ConceptualProperty": "Nombre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nombre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cliente.dirección": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Clientes",
+			          "ConceptualProperty": "Dirección"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dirección": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cliente.comuna": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Clientes",
+			          "ConceptualProperty": "Comuna"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "comuna": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cliente.tipo_cliente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Clientes",
+			          "ConceptualProperty": "Tipo Cliente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo cliente": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cliente.nombre_cliente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Clientes",
+			          "ConceptualProperty": "Nombre Cliente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nombre cliente": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cliente.dirección_completa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Clientes",
+			          "ConceptualProperty": "Dirección Completa"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dirección completa": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cliente.calificación_cliente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Clientes",
+			          "ConceptualProperty": "Calificación Cliente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "calificación cliente": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "pelicula": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Peliculas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pelicula": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "pelicula.id_pelicula": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Peliculas",
+			          "ConceptualProperty": "Id_Pelicula"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id pelicula": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Id_Pelicula": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification pelicula": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity pelicula": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier pelicula": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential pelicula": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "pelicula.nombre_pelicula": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Peliculas",
+			          "ConceptualProperty": "Nombre Pelicula"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nombre pelicula": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "pelicula.nombre_género": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Peliculas",
+			          "ConceptualProperty": "Nombre Género"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nombre género": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Genéro": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "pelicula.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Peliculas",
+			          "ConceptualProperty": "Año"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "pelicula.protagonista": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Peliculas",
+			          "ConceptualProperty": "Protagonistas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "protagonista": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "pelicula.director": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Peliculas",
+			          "ConceptualProperty": "Director"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "director": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "manager": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "administrator": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "leader": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "executive": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "boss": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "principal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "chief": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "instructor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "counselor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "counsellor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "dato": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dato": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dato.id_arriendo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datos",
+			          "ConceptualProperty": "Id_Arriendo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id arriendo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Id_Arriendo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification arriendo": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity arriendo": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier arriendo": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential arriendo": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dato.rut": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datos",
+			          "ConceptualProperty": "RUT"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "rut": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "runnel": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pothole": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "furrow": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "groove": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "channel": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "dato.apellido_paterno": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datos",
+			          "ConceptualProperty": "Apellido Paterno"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "apellido paterno": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dato.apellido_materno": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datos",
+			          "ConceptualProperty": "Apellido Materno"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "apellido materno": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dato.nombre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datos",
+			          "ConceptualProperty": "Nombres"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nombre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dato.dirección": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datos",
+			          "ConceptualProperty": "Dirección"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dirección": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dato.id_comuna": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datos",
+			          "ConceptualProperty": "Id_Comuna"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id comuna": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Id_Comuna": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification comuna": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity comuna": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier comuna": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential comuna": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dato.nombre_comuna": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datos",
+			          "ConceptualProperty": "Nombre Comuna"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nombre comuna": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dato.id_categoría": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datos",
+			          "ConceptualProperty": "Id_Categoría"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id categoría": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Id_Categoría": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification categoría": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity categoría": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier categoría": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential categoría": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dato.nombre_categoría": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datos",
+			          "ConceptualProperty": "Nombre Categoría"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nombre categoría": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dato.id_género": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datos",
+			          "ConceptualProperty": "Id_Género"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id género": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Id_Género": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification género": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity género": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier género": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential género": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dato.nombre_género": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datos",
+			          "ConceptualProperty": "Nombre Género"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nombre género": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dato.id_pelicula": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datos",
+			          "ConceptualProperty": "Id_Pelicula"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "id pelicula": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Id_Pelicula": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification pelicula": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity pelicula": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier pelicula": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential pelicula": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dato.nombre_pelicula": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datos",
+			          "ConceptualProperty": "Nombre Pelicula"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nombre pelicula": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dato.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datos",
+			          "ConceptualProperty": "Año"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dato.protagonista": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datos",
+			          "ConceptualProperty": "Protagonistas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "protagonista": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dato.fecha_arriendo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datos",
+			          "ConceptualProperty": "Fecha_Arriendo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha arriendo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Fecha_Arriendo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "dato.director": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datos",
+			          "ConceptualProperty": "Director"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "director": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "manager": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "administrator": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "leader": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "executive": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "boss": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "principal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "chief": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "instructor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "counselor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "counsellor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "dato.cantidad_de_copia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datos",
+			          "ConceptualProperty": "Cantidad de Copias"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cantidad de copia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dato.días_arriendo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datos",
+			          "ConceptualProperty": "Días Arriendo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "días arriendo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "día arriendo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "dato.valor_arriendo_diario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datos",
+			          "ConceptualProperty": "Valor Arriendo Diario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor arriendo diario": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dato.fecha_devolución": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datos",
+			          "ConceptualProperty": "Fecha_Devolución"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha devolución": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Fecha_Devolución": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "dato.fecha_devolución.jerarquía_de_fecha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datos",
+			          "VariationSource": "Fecha_Devolución",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "jerarquía de fecha": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dato.fecha_devolución.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datos",
+			          "VariationSource": "Fecha_Devolución",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Año"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha devolución año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dato.fecha_devolución.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datos",
+			          "VariationSource": "Fecha_Devolución",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha devolución trimestre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dato.fecha_devolución.me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datos",
+			          "VariationSource": "Fecha_Devolución",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha devolución me": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dato.fecha_devolución.día": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datos",
+			          "VariationSource": "Fecha_Devolución",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Día"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "día": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha devolución día": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dato.década": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datos",
+			          "ConceptualProperty": "Década"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "década": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dato.RUT_sin_máscara": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datos",
+			          "ConceptualProperty": "RUT sin máscara"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "RUT sin máscara": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dato.valor_arriendo_diario_US": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datos",
+			          "ConceptualProperty": "Valor Arriendo Diario US$"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor arriendo diario US$": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "valor arriendo diario us dollar": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_dólar": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla Dólar"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tabla dólar": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_dólar.fecha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla Dólar",
+			          "ConceptualProperty": "Fecha"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "tabla_dólar.fecha.jerarquía_de_fecha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla Dólar",
+			          "VariationSource": "Fecha",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "jerarquía de fecha": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_dólar.fecha.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla Dólar",
+			          "VariationSource": "Fecha",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Año"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_dólar.fecha.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla Dólar",
+			          "VariationSource": "Fecha",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha trimestre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_dólar.fecha.me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla Dólar",
+			          "VariationSource": "Fecha",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha me": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_dólar.fecha.día": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla Dólar",
+			          "VariationSource": "Fecha",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Día"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "día": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha día": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_dólar.valor_dólar": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla Dólar",
+			          "ConceptualProperty": "Valor Dólar"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor dólar": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "medida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.total_arriendos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Total Arriendos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total arriendos": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate arriendo": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall arriendo": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "medida.promedio_arriendos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Promedio Arriendos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "promedio arriendos": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.cantidad_arriendos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Cantidad Arriendos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cantidad arriendos": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.tit_din_años": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Titulo Años"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tit din años": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.arriendos_año_anterior": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Arriendos_Año_anterior"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "arriendos año anterior": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Arriendos_Año_anterior": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Año anterior": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "tabla_dólar_fecha_jerarquía_de_fecha_has_tabla_dólar_fecha_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Tabla Dólar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_dólar.fecha.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "tabla_dólar.fecha.jerarquía_de_fecha"
+			          }
+			        },
+			        "tabla_dólar.fecha.me": {
+			          "Target": {
+			            "Entity": "tabla_dólar.fecha.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_dólar.fecha.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "tabla_dólar.fecha.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_me"
+			        }
+			      ]
+			    },
+			    "tabla_dólar_fecha_jerarquía_de_fecha_has_tabla_dólar_fecha_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Tabla Dólar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_dólar.fecha.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "tabla_dólar.fecha.jerarquía_de_fecha"
+			          }
+			        },
+			        "tabla_dólar.fecha.trimestre": {
+			          "Target": {
+			            "Entity": "tabla_dólar.fecha.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_dólar.fecha.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "tabla_dólar.fecha.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_trimestres"
+			        }
+			      ]
+			    },
+			    "tabla_dólar_fecha_jerarquía_de_fecha_has_tabla_dólar_fecha_año": {
+			      "Binding": {
+			        "ConceptualEntity": "Tabla Dólar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_dólar.fecha.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "tabla_dólar.fecha.jerarquía_de_fecha"
+			          }
+			        },
+			        "tabla_dólar.fecha.año": {
+			          "Target": {
+			            "Entity": "tabla_dólar.fecha.año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_dólar.fecha.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "tabla_dólar.fecha.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_años"
+			        }
+			      ]
+			    },
+			    "tabla_dólar_fecha_has_jerarquía_de_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "Tabla Dólar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_dólar.fecha": {
+			          "Target": {
+			            "Entity": "tabla_dólar.fecha"
+			          }
+			        },
+			        "tabla_dólar.fecha.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "tabla_dólar.fecha.jerarquía_de_fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_dólar.fecha"
+			            },
+			            "Object": {
+			              "Role": "tabla_dólar.fecha.jerarquía_de_fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fechas_have_jerarquía_de_fechas"
+			        }
+			      ]
+			    },
+			    "dato_fecha_devolución_me_has_dato_fecha_devolución_día": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato.fecha_devolución.me": {
+			          "Target": {
+			            "Entity": "dato.fecha_devolución.me"
+			          }
+			        },
+			        "dato.fecha_devolución.día": {
+			          "Target": {
+			            "Entity": "dato.fecha_devolución.día"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato.fecha_devolución.me"
+			            },
+			            "Object": {
+			              "Role": "dato.fecha_devolución.día"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_días1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato.fecha_devolución.día"
+			            },
+			            "Object": {
+			              "Role": "dato.fecha_devolución.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "días_have_me1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dato.fecha_devolución.día"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dato.fecha_devolución.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "días_are_in_me"
+			        }
+			      ]
+			    },
+			    "dato_fecha_devolución_trimestre_has_dato_fecha_devolución_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato.fecha_devolución.trimestre": {
+			          "Target": {
+			            "Entity": "dato.fecha_devolución.trimestre"
+			          }
+			        },
+			        "dato.fecha_devolución.me": {
+			          "Target": {
+			            "Entity": "dato.fecha_devolución.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato.fecha_devolución.trimestre"
+			            },
+			            "Object": {
+			              "Role": "dato.fecha_devolución.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_me1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato.fecha_devolución.me"
+			            },
+			            "Object": {
+			              "Role": "dato.fecha_devolución.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_trimestres1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dato.fecha_devolución.me"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dato.fecha_devolución.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_are_in_trimestres"
+			        }
+			      ]
+			    },
+			    "dato_fecha_devolución_año_has_dato_fecha_devolución_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato.fecha_devolución.año": {
+			          "Target": {
+			            "Entity": "dato.fecha_devolución.año"
+			          }
+			        },
+			        "dato.fecha_devolución.trimestre": {
+			          "Target": {
+			            "Entity": "dato.fecha_devolución.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato.fecha_devolución.año"
+			            },
+			            "Object": {
+			              "Role": "dato.fecha_devolución.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "años_have_trimestres1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato.fecha_devolución.trimestre"
+			            },
+			            "Object": {
+			              "Role": "dato.fecha_devolución.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_años1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dato.fecha_devolución.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dato.fecha_devolución.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_años"
+			        }
+			      ]
+			    },
+			    "dato_fecha_devolución_jerarquía_de_fecha_has_dato_fecha_devolución_día": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato.fecha_devolución.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "dato.fecha_devolución.jerarquía_de_fecha"
+			          }
+			        },
+			        "dato.fecha_devolución.día": {
+			          "Target": {
+			            "Entity": "dato.fecha_devolución.día"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato.fecha_devolución.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "dato.fecha_devolución.día"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_días1"
+			        }
+			      ]
+			    },
+			    "dato_fecha_devolución_jerarquía_de_fecha_has_dato_fecha_devolución_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato.fecha_devolución.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "dato.fecha_devolución.jerarquía_de_fecha"
+			          }
+			        },
+			        "dato.fecha_devolución.me": {
+			          "Target": {
+			            "Entity": "dato.fecha_devolución.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato.fecha_devolución.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "dato.fecha_devolución.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_me2"
+			        }
+			      ]
+			    },
+			    "dato_fecha_devolución_jerarquía_de_fecha_has_dato_fecha_devolución_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato.fecha_devolución.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "dato.fecha_devolución.jerarquía_de_fecha"
+			          }
+			        },
+			        "dato.fecha_devolución.trimestre": {
+			          "Target": {
+			            "Entity": "dato.fecha_devolución.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato.fecha_devolución.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "dato.fecha_devolución.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_trimestres2"
+			        }
+			      ]
+			    },
+			    "dato_fecha_devolución_jerarquía_de_fecha_has_dato_fecha_devolución_año": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato.fecha_devolución.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "dato.fecha_devolución.jerarquía_de_fecha"
+			          }
+			        },
+			        "dato.fecha_devolución.año": {
+			          "Target": {
+			            "Entity": "dato.fecha_devolución.año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato.fecha_devolución.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "dato.fecha_devolución.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_años2"
+			        }
+			      ]
+			    },
+			    "dato_fecha_devolución_has_jerarquía_de_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato.fecha_devolución": {
+			          "Target": {
+			            "Entity": "dato.fecha_devolución"
+			          }
+			        },
+			        "dato.fecha_devolución.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "dato.fecha_devolución.jerarquía_de_fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato.fecha_devolución"
+			            },
+			            "Object": {
+			              "Role": "dato.fecha_devolución.jerarquía_de_fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fecha_devolucións_have_jerarquía_de_fechas"
+			        }
+			      ]
+			    },
+			    "dato_has_calendario": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato": {
+			          "Target": {
+			            "Entity": "dato"
+			          }
+			        },
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato"
+			            },
+			            "Object": {
+			              "Role": "calendario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_have_calendarios"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "dato"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_datos"
+			        }
+			      ]
+			    },
+			    "dato_has_pelicula": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato": {
+			          "Target": {
+			            "Entity": "dato"
+			          }
+			        },
+			        "pelicula": {
+			          "Target": {
+			            "Entity": "pelicula"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato"
+			            },
+			            "Object": {
+			              "Role": "pelicula"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_have_peliculas"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pelicula"
+			            },
+			            "Object": {
+			              "Role": "dato"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "peliculas_have_datos"
+			        }
+			      ]
+			    },
+			    "dato_has_cliente": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato": {
+			          "Target": {
+			            "Entity": "dato"
+			          }
+			        },
+			        "cliente": {
+			          "Target": {
+			            "Entity": "cliente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato"
+			            },
+			            "Object": {
+			              "Role": "cliente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_have_clientes"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cliente"
+			            },
+			            "Object": {
+			              "Role": "dato"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "clientes_have_datos"
+			        }
+			      ]
+			    },
+			    "dato_has_medida_arriendos_año_anterior": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato": {
+			          "Target": {
+			            "Entity": "dato"
+			          }
+			        },
+			        "medida.arriendos_año_anterior": {
+			          "Target": {
+			            "Entity": "medida.arriendos_año_anterior"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato"
+			            },
+			            "Object": {
+			              "Role": "medida.arriendos_año_anterior"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_have_arriendos_año_anterior"
+			        }
+			      ]
+			    },
+			    "dato_has_medida_cantidad_arriendos": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato": {
+			          "Target": {
+			            "Entity": "dato"
+			          }
+			        },
+			        "medida.cantidad_arriendos": {
+			          "Target": {
+			            "Entity": "medida.cantidad_arriendos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato"
+			            },
+			            "Object": {
+			              "Role": "medida.cantidad_arriendos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_have_cantidad_arriendos"
+			        }
+			      ]
+			    },
+			    "dato_has_medida_promedio_arriendos": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato": {
+			          "Target": {
+			            "Entity": "dato"
+			          }
+			        },
+			        "medida.promedio_arriendos": {
+			          "Target": {
+			            "Entity": "medida.promedio_arriendos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato"
+			            },
+			            "Object": {
+			              "Role": "medida.promedio_arriendos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_have_promedio_arriendos"
+			        }
+			      ]
+			    },
+			    "dato_has_medida_total_arriendos": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato": {
+			          "Target": {
+			            "Entity": "dato"
+			          }
+			        },
+			        "medida.total_arriendos": {
+			          "Target": {
+			            "Entity": "medida.total_arriendos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato"
+			            },
+			            "Object": {
+			              "Role": "medida.total_arriendos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_have_total_arriendos"
+			        }
+			      ]
+			    },
+			    "tabla_dólar_has_valor_dólar": {
+			      "Binding": {
+			        "ConceptualEntity": "Tabla Dólar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_dólar": {
+			          "Target": {
+			            "Entity": "tabla_dólar"
+			          }
+			        },
+			        "tabla_dólar.valor_dólar": {
+			          "Target": {
+			            "Entity": "tabla_dólar.valor_dólar"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_dólar"
+			            },
+			            "Object": {
+			              "Role": "tabla_dólar.valor_dólar"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_dólars_have_valor_dólars"
+			        }
+			      ]
+			    },
+			    "tabla_dólar_has_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "Tabla Dólar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_dólar": {
+			          "Target": {
+			            "Entity": "tabla_dólar"
+			          }
+			        },
+			        "tabla_dólar.fecha": {
+			          "Target": {
+			            "Entity": "tabla_dólar.fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_dólar"
+			            },
+			            "Object": {
+			              "Role": "tabla_dólar.fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_dólars_have_fechas"
+			        }
+			      ]
+			    },
+			    "dato_has_valor_arriendo_diario_US": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato": {
+			          "Target": {
+			            "Entity": "dato"
+			          }
+			        },
+			        "dato.valor_arriendo_diario_US": {
+			          "Target": {
+			            "Entity": "dato.valor_arriendo_diario_US"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato"
+			            },
+			            "Object": {
+			              "Role": "dato.valor_arriendo_diario_US"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_have_valor_arriendo_diario_US"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "dato"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "dato.valor_arriendo_diario_US"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "valor_arriendo_diario_US_indicates_how_expensive_datos_are"
+			        }
+			      ]
+			    },
+			    "dato_has_RUT_sin_máscara": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato": {
+			          "Target": {
+			            "Entity": "dato"
+			          }
+			        },
+			        "dato.RUT_sin_máscara": {
+			          "Target": {
+			            "Entity": "dato.RUT_sin_máscara"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato"
+			            },
+			            "Object": {
+			              "Role": "dato.RUT_sin_máscara"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_have_RUT_sin_máscaras"
+			        }
+			      ]
+			    },
+			    "dato_has_década": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato": {
+			          "Target": {
+			            "Entity": "dato"
+			          }
+			        },
+			        "dato.década": {
+			          "Target": {
+			            "Entity": "dato.década"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato"
+			            },
+			            "Object": {
+			              "Role": "dato.década"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_have_décadas"
+			        }
+			      ]
+			    },
+			    "dato_has_fecha_devolución": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato": {
+			          "Target": {
+			            "Entity": "dato"
+			          }
+			        },
+			        "dato.fecha_devolución": {
+			          "Target": {
+			            "Entity": "dato.fecha_devolución"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato"
+			            },
+			            "Object": {
+			              "Role": "dato.fecha_devolución"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_have_fecha_devolucións"
+			        }
+			      ]
+			    },
+			    "dato_has_valor_arriendo_diario": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato": {
+			          "Target": {
+			            "Entity": "dato"
+			          }
+			        },
+			        "dato.valor_arriendo_diario": {
+			          "Target": {
+			            "Entity": "dato.valor_arriendo_diario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato"
+			            },
+			            "Object": {
+			              "Role": "dato.valor_arriendo_diario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_have_valor_arriendo_diarios"
+			        }
+			      ]
+			    },
+			    "dato_has_días_arriendo": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato": {
+			          "Target": {
+			            "Entity": "dato"
+			          }
+			        },
+			        "dato.días_arriendo": {
+			          "Target": {
+			            "Entity": "dato.días_arriendo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato"
+			            },
+			            "Object": {
+			              "Role": "dato.días_arriendo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_have_días_arriendos"
+			        }
+			      ]
+			    },
+			    "dato_has_cantidad_de_copia": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato": {
+			          "Target": {
+			            "Entity": "dato"
+			          }
+			        },
+			        "dato.cantidad_de_copia": {
+			          "Target": {
+			            "Entity": "dato.cantidad_de_copia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato"
+			            },
+			            "Object": {
+			              "Role": "dato.cantidad_de_copia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_have_cantidad_de_copias"
+			        }
+			      ]
+			    },
+			    "dato_has_director": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato": {
+			          "Target": {
+			            "Entity": "dato"
+			          }
+			        },
+			        "dato.director": {
+			          "Target": {
+			            "Entity": "dato.director"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato"
+			            },
+			            "Object": {
+			              "Role": "dato.director"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_have_directors"
+			        },
+			        {
+			          "Verb": {
+			            "Subject": {
+			              "Role": "dato.director"
+			            },
+			            "Verbs": [
+			              {
+			                "direct": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dato"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.75,
+			          "ID": "directors_direct_datos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato.director"
+			            },
+			            "Object": {
+			              "Role": "dato"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "directors_have_datos"
+			        }
+			      ]
+			    },
+			    "dato_has_fecha_arriendo": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato": {
+			          "Target": {
+			            "Entity": "dato"
+			          }
+			        },
+			        "dato.fecha_arriendo": {
+			          "Target": {
+			            "Entity": "dato.fecha_arriendo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato"
+			            },
+			            "Object": {
+			              "Role": "dato.fecha_arriendo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_have_fecha_arriendos"
+			        }
+			      ]
+			    },
+			    "dato_has_protagonista": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato": {
+			          "Target": {
+			            "Entity": "dato"
+			          }
+			        },
+			        "dato.protagonista": {
+			          "Target": {
+			            "Entity": "dato.protagonista"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato"
+			            },
+			            "Object": {
+			              "Role": "dato.protagonista"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_have_protagonistas"
+			        }
+			      ]
+			    },
+			    "dato_has_año": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato": {
+			          "Target": {
+			            "Entity": "dato"
+			          }
+			        },
+			        "dato.año": {
+			          "Target": {
+			            "Entity": "dato.año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato"
+			            },
+			            "Object": {
+			              "Role": "dato.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_have_años"
+			        }
+			      ]
+			    },
+			    "dato_has_nombre_pelicula": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato": {
+			          "Target": {
+			            "Entity": "dato"
+			          }
+			        },
+			        "dato.nombre_pelicula": {
+			          "Target": {
+			            "Entity": "dato.nombre_pelicula"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato"
+			            },
+			            "Object": {
+			              "Role": "dato.nombre_pelicula"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_have_nombre_peliculas"
+			        }
+			      ]
+			    },
+			    "dato_has_nombre_género": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato": {
+			          "Target": {
+			            "Entity": "dato"
+			          }
+			        },
+			        "dato.nombre_género": {
+			          "Target": {
+			            "Entity": "dato.nombre_género"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato"
+			            },
+			            "Object": {
+			              "Role": "dato.nombre_género"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_have_nombre_géneros"
+			        }
+			      ]
+			    },
+			    "dato_has_id_género": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato": {
+			          "Target": {
+			            "Entity": "dato"
+			          }
+			        },
+			        "dato.id_género": {
+			          "Target": {
+			            "Entity": "dato.id_género"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato"
+			            },
+			            "Object": {
+			              "Role": "dato.id_género"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_have_id_géneros"
+			        }
+			      ]
+			    },
+			    "dato_has_nombre_categoría": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato": {
+			          "Target": {
+			            "Entity": "dato"
+			          }
+			        },
+			        "dato.nombre_categoría": {
+			          "Target": {
+			            "Entity": "dato.nombre_categoría"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato"
+			            },
+			            "Object": {
+			              "Role": "dato.nombre_categoría"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_have_nombre_categorías"
+			        }
+			      ]
+			    },
+			    "dato_has_id_categoría": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato": {
+			          "Target": {
+			            "Entity": "dato"
+			          }
+			        },
+			        "dato.id_categoría": {
+			          "Target": {
+			            "Entity": "dato.id_categoría"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato"
+			            },
+			            "Object": {
+			              "Role": "dato.id_categoría"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_have_id_categorías"
+			        }
+			      ]
+			    },
+			    "dato_has_nombre_comuna": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato": {
+			          "Target": {
+			            "Entity": "dato"
+			          }
+			        },
+			        "dato.nombre_comuna": {
+			          "Target": {
+			            "Entity": "dato.nombre_comuna"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato"
+			            },
+			            "Object": {
+			              "Role": "dato.nombre_comuna"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_have_nombre_comunas"
+			        }
+			      ]
+			    },
+			    "dato_has_id_comuna": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato": {
+			          "Target": {
+			            "Entity": "dato"
+			          }
+			        },
+			        "dato.id_comuna": {
+			          "Target": {
+			            "Entity": "dato.id_comuna"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato"
+			            },
+			            "Object": {
+			              "Role": "dato.id_comuna"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_have_id_comunas"
+			        }
+			      ]
+			    },
+			    "dato_has_dirección": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato": {
+			          "Target": {
+			            "Entity": "dato"
+			          }
+			        },
+			        "dato.dirección": {
+			          "Target": {
+			            "Entity": "dato.dirección"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato"
+			            },
+			            "Object": {
+			              "Role": "dato.dirección"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_have_direccións"
+			        }
+			      ]
+			    },
+			    "dato_has_nombre": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato": {
+			          "Target": {
+			            "Entity": "dato"
+			          }
+			        },
+			        "dato.nombre": {
+			          "Target": {
+			            "Entity": "dato.nombre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato"
+			            },
+			            "Object": {
+			              "Role": "dato.nombre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_have_nombres"
+			        }
+			      ]
+			    },
+			    "dato_has_apellido_materno": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato": {
+			          "Target": {
+			            "Entity": "dato"
+			          }
+			        },
+			        "dato.apellido_materno": {
+			          "Target": {
+			            "Entity": "dato.apellido_materno"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato"
+			            },
+			            "Object": {
+			              "Role": "dato.apellido_materno"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_have_apellido_maternos"
+			        }
+			      ]
+			    },
+			    "dato_has_apellido_paterno": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato": {
+			          "Target": {
+			            "Entity": "dato"
+			          }
+			        },
+			        "dato.apellido_paterno": {
+			          "Target": {
+			            "Entity": "dato.apellido_paterno"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato"
+			            },
+			            "Object": {
+			              "Role": "dato.apellido_paterno"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_have_apellido_paternos"
+			        }
+			      ]
+			    },
+			    "dato_has_id_arriendo": {
+			      "Binding": {
+			        "ConceptualEntity": "Datos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dato": {
+			          "Target": {
+			            "Entity": "dato"
+			          }
+			        },
+			        "dato.id_arriendo": {
+			          "Target": {
+			            "Entity": "dato.id_arriendo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dato"
+			            },
+			            "Object": {
+			              "Role": "dato.id_arriendo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_have_id_arriendos"
+			        }
+			      ]
+			    },
+			    "pelicula_has_director": {
+			      "Binding": {
+			        "ConceptualEntity": "Peliculas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pelicula": {
+			          "Target": {
+			            "Entity": "pelicula"
+			          }
+			        },
+			        "pelicula.director": {
+			          "Target": {
+			            "Entity": "pelicula.director"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pelicula"
+			            },
+			            "Object": {
+			              "Role": "pelicula.director"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "peliculas_have_directors"
+			        },
+			        {
+			          "Verb": {
+			            "Subject": {
+			              "Role": "pelicula.director"
+			            },
+			            "Verbs": [
+			              {
+			                "direct": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "pelicula"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.75,
+			          "ID": "directors_direct_peliculas"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pelicula.director"
+			            },
+			            "Object": {
+			              "Role": "pelicula"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "directors_have_peliculas"
+			        }
+			      ]
+			    },
+			    "pelicula_has_protagonista": {
+			      "Binding": {
+			        "ConceptualEntity": "Peliculas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pelicula": {
+			          "Target": {
+			            "Entity": "pelicula"
+			          }
+			        },
+			        "pelicula.protagonista": {
+			          "Target": {
+			            "Entity": "pelicula.protagonista"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pelicula"
+			            },
+			            "Object": {
+			              "Role": "pelicula.protagonista"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "peliculas_have_protagonistas"
+			        }
+			      ]
+			    },
+			    "pelicula_has_año": {
+			      "Binding": {
+			        "ConceptualEntity": "Peliculas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pelicula": {
+			          "Target": {
+			            "Entity": "pelicula"
+			          }
+			        },
+			        "pelicula.año": {
+			          "Target": {
+			            "Entity": "pelicula.año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pelicula"
+			            },
+			            "Object": {
+			              "Role": "pelicula.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "peliculas_have_años"
+			        }
+			      ]
+			    },
+			    "pelicula_has_nombre_género": {
+			      "Binding": {
+			        "ConceptualEntity": "Peliculas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pelicula": {
+			          "Target": {
+			            "Entity": "pelicula"
+			          }
+			        },
+			        "pelicula.nombre_género": {
+			          "Target": {
+			            "Entity": "pelicula.nombre_género"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pelicula"
+			            },
+			            "Object": {
+			              "Role": "pelicula.nombre_género"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "peliculas_have_nombre_géneros"
+			        }
+			      ]
+			    },
+			    "pelicula_has_nombre_pelicula": {
+			      "Binding": {
+			        "ConceptualEntity": "Peliculas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pelicula": {
+			          "Target": {
+			            "Entity": "pelicula"
+			          }
+			        },
+			        "pelicula.nombre_pelicula": {
+			          "Target": {
+			            "Entity": "pelicula.nombre_pelicula"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pelicula"
+			            },
+			            "Object": {
+			              "Role": "pelicula.nombre_pelicula"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "peliculas_have_nombre_peliculas"
+			        }
+			      ]
+			    },
+			    "pelicula_has_id_pelicula": {
+			      "Binding": {
+			        "ConceptualEntity": "Peliculas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pelicula": {
+			          "Target": {
+			            "Entity": "pelicula"
+			          }
+			        },
+			        "pelicula.id_pelicula": {
+			          "Target": {
+			            "Entity": "pelicula.id_pelicula"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pelicula"
+			            },
+			            "Object": {
+			              "Role": "pelicula.id_pelicula"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "peliculas_have_id_peliculas"
+			        }
+			      ]
+			    },
+			    "cliente_has_calificación_cliente": {
+			      "Binding": {
+			        "ConceptualEntity": "Clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cliente": {
+			          "Target": {
+			            "Entity": "cliente"
+			          }
+			        },
+			        "cliente.calificación_cliente": {
+			          "Target": {
+			            "Entity": "cliente.calificación_cliente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cliente"
+			            },
+			            "Object": {
+			              "Role": "cliente.calificación_cliente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "clientes_have_calificación_clientes"
+			        }
+			      ]
+			    },
+			    "cliente_has_dirección_completa": {
+			      "Binding": {
+			        "ConceptualEntity": "Clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cliente": {
+			          "Target": {
+			            "Entity": "cliente"
+			          }
+			        },
+			        "cliente.dirección_completa": {
+			          "Target": {
+			            "Entity": "cliente.dirección_completa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cliente"
+			            },
+			            "Object": {
+			              "Role": "cliente.dirección_completa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "clientes_have_dirección_completas"
+			        }
+			      ]
+			    },
+			    "cliente_has_nombre_cliente": {
+			      "Binding": {
+			        "ConceptualEntity": "Clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cliente": {
+			          "Target": {
+			            "Entity": "cliente"
+			          }
+			        },
+			        "cliente.nombre_cliente": {
+			          "Target": {
+			            "Entity": "cliente.nombre_cliente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cliente"
+			            },
+			            "Object": {
+			              "Role": "cliente.nombre_cliente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "clientes_have_nombre_clientes"
+			        }
+			      ]
+			    },
+			    "cliente_has_tipo_cliente": {
+			      "Binding": {
+			        "ConceptualEntity": "Clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cliente": {
+			          "Target": {
+			            "Entity": "cliente"
+			          }
+			        },
+			        "cliente.tipo_cliente": {
+			          "Target": {
+			            "Entity": "cliente.tipo_cliente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cliente"
+			            },
+			            "Object": {
+			              "Role": "cliente.tipo_cliente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "clientes_have_tipo_clientes"
+			        }
+			      ]
+			    },
+			    "cliente_has_comuna": {
+			      "Binding": {
+			        "ConceptualEntity": "Clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cliente": {
+			          "Target": {
+			            "Entity": "cliente"
+			          }
+			        },
+			        "cliente.comuna": {
+			          "Target": {
+			            "Entity": "cliente.comuna"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cliente"
+			            },
+			            "Object": {
+			              "Role": "cliente.comuna"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "clientes_have_comunas"
+			        }
+			      ]
+			    },
+			    "cliente_has_dirección": {
+			      "Binding": {
+			        "ConceptualEntity": "Clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cliente": {
+			          "Target": {
+			            "Entity": "cliente"
+			          }
+			        },
+			        "cliente.dirección": {
+			          "Target": {
+			            "Entity": "cliente.dirección"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cliente"
+			            },
+			            "Object": {
+			              "Role": "cliente.dirección"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "clientes_have_direccións"
+			        }
+			      ]
+			    },
+			    "cliente_has_nombre": {
+			      "Binding": {
+			        "ConceptualEntity": "Clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cliente": {
+			          "Target": {
+			            "Entity": "cliente"
+			          }
+			        },
+			        "cliente.nombre": {
+			          "Target": {
+			            "Entity": "cliente.nombre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cliente"
+			            },
+			            "Object": {
+			              "Role": "cliente.nombre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "clientes_have_nombres"
+			        }
+			      ]
+			    },
+			    "cliente_has_materno": {
+			      "Binding": {
+			        "ConceptualEntity": "Clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cliente": {
+			          "Target": {
+			            "Entity": "cliente"
+			          }
+			        },
+			        "cliente.materno": {
+			          "Target": {
+			            "Entity": "cliente.materno"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cliente"
+			            },
+			            "Object": {
+			              "Role": "cliente.materno"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "clientes_have_maternos"
+			        }
+			      ]
+			    },
+			    "cliente_has_paterno": {
+			      "Binding": {
+			        "ConceptualEntity": "Clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cliente": {
+			          "Target": {
+			            "Entity": "cliente"
+			          }
+			        },
+			        "cliente.paterno": {
+			          "Target": {
+			            "Entity": "cliente.paterno"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cliente"
+			            },
+			            "Object": {
+			              "Role": "cliente.paterno"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "clientes_have_paternos"
+			        }
+			      ]
+			    },
+			    "cliente_has_rut": {
+			      "Binding": {
+			        "ConceptualEntity": "Clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cliente": {
+			          "Target": {
+			            "Entity": "cliente"
+			          }
+			        },
+			        "cliente.rut": {
+			          "Target": {
+			            "Entity": "cliente.rut"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cliente"
+			            },
+			            "Object": {
+			              "Role": "cliente.rut"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "clientes_have_ruts"
+			        }
+			      ]
+			    },
+			    "tabla_dólar_fecha_jerarquía_de_fecha_has_tabla_dólar_fecha_día": {
+			      "Binding": {
+			        "ConceptualEntity": "Tabla Dólar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_dólar.fecha.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "tabla_dólar.fecha.jerarquía_de_fecha"
+			          }
+			        },
+			        "tabla_dólar.fecha.día": {
+			          "Target": {
+			            "Entity": "tabla_dólar.fecha.día"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_dólar.fecha.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "tabla_dólar.fecha.día"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_días2"
+			        }
+			      ]
+			    },
+			    "tabla_dólar_fecha_año_has_tabla_dólar_fecha_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Tabla Dólar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_dólar.fecha.año": {
+			          "Target": {
+			            "Entity": "tabla_dólar.fecha.año"
+			          }
+			        },
+			        "tabla_dólar.fecha.trimestre": {
+			          "Target": {
+			            "Entity": "tabla_dólar.fecha.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_dólar.fecha.año"
+			            },
+			            "Object": {
+			              "Role": "tabla_dólar.fecha.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "años_have_trimestres2"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_dólar.fecha.trimestre"
+			            },
+			            "Object": {
+			              "Role": "tabla_dólar.fecha.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_años2"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "tabla_dólar.fecha.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "tabla_dólar.fecha.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_años2"
+			        }
+			      ]
+			    },
+			    "tabla_dólar_fecha_trimestre_has_tabla_dólar_fecha_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Tabla Dólar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_dólar.fecha.trimestre": {
+			          "Target": {
+			            "Entity": "tabla_dólar.fecha.trimestre"
+			          }
+			        },
+			        "tabla_dólar.fecha.me": {
+			          "Target": {
+			            "Entity": "tabla_dólar.fecha.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_dólar.fecha.trimestre"
+			            },
+			            "Object": {
+			              "Role": "tabla_dólar.fecha.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_me2"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_dólar.fecha.me"
+			            },
+			            "Object": {
+			              "Role": "tabla_dólar.fecha.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_trimestres2"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "tabla_dólar.fecha.me"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "tabla_dólar.fecha.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_are_in_trimestres2"
+			        }
+			      ]
+			    },
+			    "tabla_dólar_fecha_me_has_tabla_dólar_fecha_día": {
+			      "Binding": {
+			        "ConceptualEntity": "Tabla Dólar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_dólar.fecha.me": {
+			          "Target": {
+			            "Entity": "tabla_dólar.fecha.me"
+			          }
+			        },
+			        "tabla_dólar.fecha.día": {
+			          "Target": {
+			            "Entity": "tabla_dólar.fecha.día"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_dólar.fecha.me"
+			            },
+			            "Object": {
+			              "Role": "tabla_dólar.fecha.día"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_días2"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_dólar.fecha.día"
+			            },
+			            "Object": {
+			              "Role": "tabla_dólar.fecha.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "días_have_me2"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "tabla_dólar.fecha.día"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "tabla_dólar.fecha.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "días_are_in_me2"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

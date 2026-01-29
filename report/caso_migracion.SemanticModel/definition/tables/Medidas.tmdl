@@ -1,0 +1,61 @@
+table Medidas
+	lineageTag: 72887eff-e0b8-4393-8f1d-f7ffc40e3a67
+
+	measure 'Total Arriendos' = ```
+			
+			SUMX(
+			    Datos, 
+			    Datos[Valor Arriendo Diario] * Datos[Días Arriendo] 
+			)
+			```
+		formatString: #,0
+		lineageTag: 34d95ee5-4e41-425b-9d8f-f22837f48022
+
+	measure 'Promedio Arriendos' = ```
+			
+			AVERAGEX( 
+			    Datos, 
+			    Datos[Valor Arriendo Diario] * Datos[Días Arriendo]
+			)
+			```
+		formatString: #,0
+		lineageTag: b577ef6b-75b5-433b-9ac0-467d07f78849
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure 'Cantidad Arriendos' = COUNTROWS(Datos)
+		formatString: #,0
+		lineageTag: 36aafa71-a95b-46c8-8bda-9f9b43f25ebf
+
+	measure 'Titulo Años' =
+			
+			VAR AnosSeleccionados = VALUES('Calendario'[Año])
+			
+			RETURN
+			IF (
+			    ISFILTERED('Calendario'[Año]),
+			    "Ventas de los años: " & CONCATENATEX(AnosSeleccionados, 'Calendario'[Año], ", "),
+			    "Venta de todos los años"
+			)
+		lineageTag: d962b965-046b-4847-98de-9ffe2ba28645
+
+	measure Arriendos_Año_anterior = ```
+			
+			CALCULATE(
+			    [Total Arriendos], año -1 
+			)
+			```
+		lineageTag: f86c3c95-4ee2-491b-9e56-d2a8e2448c48
+
+	partition Medidas = m
+		mode: import
+		source =
+				let
+				    Origen = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Columna1 = _t]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(Origen,{{"Columna1", type text}}),
+				    #"Columnas quitadas" = Table.RemoveColumns(#"Tipo cambiado",{"Columna1"})
+				in
+				    #"Columnas quitadas"
+
+	annotation PBI_ResultType = Table
+

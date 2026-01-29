@@ -1,0 +1,23 @@
+relationship 0a83d16d-a755-47d3-b42d-66a02f63e834
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Datos.Fecha_Devolución
+	toColumn: LocalDateTable_aab5d653-2040-47e2-82df-a7266a146f91.Date
+
+relationship AutoDetected_2f78c840-9981-4080-a7a3-3c0453178e9e
+	fromColumn: Datos.RUT
+	toColumn: Clientes.RUT
+
+relationship AutoDetected_03b6c72f-b417-454b-a387-87d628051133
+	fromColumn: Datos.Id_Pelicula
+	toColumn: Peliculas.Id_Pelicula
+
+relationship 0a04150f-9f57-4bd7-a7d2-44c49f97bece
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Tabla Dólar'.Fecha
+	toColumn: LocalDateTable_5ecf25fa-f594-4ba3-8f82-e60220070282.Date
+
+relationship 82921132-8cb1-417f-aeb7-acf847cbd3b3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Datos.Fecha_Arriendo
+	toColumn: LocalDateTable_237b03fc-f61c-4f75-983a-cddc7936af90.Date
+

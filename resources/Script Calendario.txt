@@ -1,0 +1,55 @@
+let
+    Origen = #"StartDate",
+    #"Convertida en tabla" = #table(1, {{Origen}}),
+    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Convertida en tabla",{{"Column1", "StartDate"}}),
+    #"Personalizada agregada" = Table.AddColumn(#"Columnas con nombre cambiado", "EndDate", each Date.From(DateTime.LocalNow ())),
+    #"Personalizada agregada1" = Table.AddColumn(#"Personalizada agregada", "Dates", each {Number.From([StartDate])..Number.From([EndDate])}),
+    Dates = #"Personalizada agregada1"{0}[Dates],
+    #"Convertida en tabla1" = Table.FromList(Dates, Splitter.SplitByNothing(), null, null, ExtraValues.Error),
+    #"Renamed Columns" = Table.RenameColumns(#"Convertida en tabla1",{{"Column1", "DateKey"}}),
+    #"Changed Type" = Table.TransformColumnTypes(#"Renamed Columns",{{"DateKey", type date}}),
+    #"Added Custom" = Table.AddColumn(#"Changed Type", "Año", each Date.Year([DateKey])),
+    #"Changed Type1" = Table.TransformColumnTypes(#"Added Custom",{{"Año", Int64.Type}}),
+    #"Added Custom1" = Table.AddColumn(#"Changed Type1", "TrimNum", each Date.QuarterOfYear([DateKey])),
+    #"Changed Type2" = Table.TransformColumnTypes(#"Added Custom1",{{"TrimNum", Int64.Type}}),
+    #"Added Custom2" = Table.AddColumn(#"Changed Type2", "TrimNom", each "Trim " & Number.ToText(Date.QuarterOfYear([DateKey]))),
+    #"Added Custom3" = Table.AddColumn(#"Added Custom2", "MesNum", each Date.Month([DateKey])),
+    #"Added Custom4" = Table.AddColumn(#"Added Custom3", "MesNom", each Text.Proper(Date.MonthName([DateKey],"es-ES"))),
+    #"Changed Type3" = Table.TransformColumnTypes(#"Added Custom4",{{"MesNum", Int64.Type}}),
+    #"Added Custom5" = Table.AddColumn(#"Changed Type3", "MesNomAB", each Text.Start(Text.Proper(Date.MonthName([DateKey],"es-ES")),3)),
+    #"Changed Type4" = Table.TransformColumnTypes(#"Added Custom5",{{"MesNomAB", type text}}),
+    #"Added Custom6" = Table.AddColumn(#"Changed Type4", "SemNrmNum", each Date.WeekOfYear([DateKey],1)),
+    #"Changed Type5" = Table.TransformColumnTypes(#"Added Custom6",{{"SemNrmNum", Int64.Type}}),
+    #"Added Custom8" = Table.AddColumn(#"Changed Type5", "DiaNum", each Date.Day([DateKey])),
+    #"Changed Type7" = Table.TransformColumnTypes(#"Added Custom8",{{"DiaNum", Int64.Type}}),
+    #"Added Custom9" = Table.AddColumn(#"Changed Type7", "DiaNom", each Text.Proper(Date.DayOfWeekName([DateKey], "eS-ES"))),
+    #"Added Custom10" = Table.AddColumn(#"Added Custom9", "DiaNomAB", each Text.Start(Text.Proper(Date.DayOfWeekName([DateKey], "eS-ES")),3)),
+    #"Added Custom11" = Table.AddColumn(#"Added Custom10", "AñoMes", each Number.ToText([Año])&"-"& [MesNomAB]),
+    #"Changed Type8" = Table.TransformColumnTypes(#"Added Custom11",{{"AñoMes", type text}}),
+    #"Removed Columns" = Table.RemoveColumns(#"Changed Type8",{"AñoMes"}),
+    #"Added Custom12" = Table.AddColumn(#"Removed Columns", "MesP", each Date.ToText([DateKey], "MMM", "es-419")),
+    #"Removed Columns1" = Table.RemoveColumns(#"Added Custom12",{"MesP"}),
+    #"Added Custom13" = Table.AddColumn(#"Removed Columns1", "Custom", each Number.ToText([Año])&Text.PadStart(Number.ToText([MesNum]),2,"0")),
+    #"Renamed Columns1" = Table.RenameColumns(#"Added Custom13",{{"Custom", "MesCalendario"}}),
+    #"Added Custom14" = Table.AddColumn(#"Renamed Columns1", "DiaSemNum", each Date.DayOfWeek([DateKey],Day.Monday)),
+    #"Added Custom15" = Table.AddColumn(#"Added Custom14", "Custom", each Number.ToText([Año])&"-"&[MesNomAB]),
+    #"Texto en mayúsculas" = Table.TransformColumns(#"Added Custom15",{{"Custom", Text.Upper, type text}}),
+    #"Renamed Columns2" = Table.RenameColumns(#"Texto en mayúsculas",{{"Custom", "YM"}, {"DateKey", "Date"}}),
+    #"Personalizada agregada2" = Table.AddColumn(#"Renamed Columns2", "fecha_curso", each DateTimeZone.UtcNow ()),
+    #"Mes insertado" = Table.AddColumn(#"Personalizada agregada2", "mes_curso", each Date.Month([fecha_curso]), Int64.Type),
+    #"Año insertado" = Table.AddColumn(#"Mes insertado", "año_curso", each Date.Year([fecha_curso]), Int64.Type),
+    #"Personalizada agregada3" = Table.AddColumn(#"Año insertado", "año_mes_curso", each Number.ToText([año_curso])&Text.PadStart(Number.ToText([mes_curso]),2,"0")),
+    #"Tipo cambiado" = Table.TransformColumnTypes(#"Personalizada agregada3",{{"año_mes_curso", Int64.Type}, {"MesCalendario", Int64.Type}}),
+    #"Columna condicional agregada" = Table.AddColumn(#"Tipo cambiado", "filtro_general", each 
+if [MesCalendario] = [año_mes_curso] then "Mes en curso" else
+if [MesCalendario] = [año_mes_curso]-1 then "Mes anterior" else
+if [MesCalendario] = [año_mes_curso]-2 then "Hace 2 Meses" else
+if [MesCalendario] = [año_mes_curso]-3 then "Hace 3 Meses" else
+if [MesCalendario] = [año_mes_curso]-4 then "Hace 4 Meses" else
+if [MesCalendario] = [año_mes_curso]-5 then "Hace 5 Meses" else
+if [MesCalendario] = [año_mes_curso]-6 then "Hace 6 Meses" else "Mayor a 6 Meses"),
+    #"Personalizada agregada4" = Table.AddColumn(#"Columna condicional agregada", "Mes Año", each if Date.Month([Date]) = Date.Month(DateTime.LocalNow()) and Date.Year([Date]) = Date.Year(DateTime.LocalNow()) then "Mes En Curso" else [YM]),
+    #"Columnas quitadas" = Table.RemoveColumns(#"Personalizada agregada4",{"fecha_curso", "mes_curso", "año_curso", "año_mes_curso"}),
+    #"Columnas con nombre cambiado1" = Table.RenameColumns(#"Columnas quitadas",{{"Mes Año", "FiltroActual_MA"}, {"filtro_general", "FiltroActual"}, {"YM", "MesAño"}})
+in
+    #"Columnas con nombre cambiado1"

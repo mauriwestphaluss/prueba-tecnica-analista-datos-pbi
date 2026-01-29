@@ -1,0 +1,105 @@
+table Clientes
+	lineageTag: 4aece616-a908-474e-9f76-edb98adc8659
+
+	column RUT
+		dataType: string
+		lineageTag: 748d6fd6-785e-4544-a6bf-df73a851ad9f
+		summarizeBy: none
+		sourceColumn: RUT
+
+		annotation SummarizationSetBy = Automatic
+
+	column Paterno
+		dataType: string
+		lineageTag: cd967164-9afb-416c-a36a-d415830f3ca2
+		summarizeBy: none
+		sourceColumn: Paterno
+
+		annotation SummarizationSetBy = Automatic
+
+	column Materno
+		dataType: string
+		lineageTag: 40369ae2-4776-40eb-b478-1e65cf50e9c6
+		summarizeBy: none
+		sourceColumn: Materno
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nombre
+		dataType: string
+		lineageTag: 30ca6e52-3c0b-4c36-a6e6-295cfd9b836f
+		summarizeBy: none
+		sourceColumn: Nombre
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dirección
+		dataType: string
+		lineageTag: 3981a9bc-bda8-4921-91de-1331e51da183
+		summarizeBy: none
+		sourceColumn: Dirección
+
+		annotation SummarizationSetBy = Automatic
+
+	column Comuna
+		dataType: string
+		lineageTag: 29d60b54-2a3a-46b3-bea4-ce983fa56298
+		summarizeBy: none
+		sourceColumn: Comuna
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tipo Cliente'
+		dataType: int64
+		formatString: 0
+		lineageTag: 47c24811-ea23-40fa-8649-9a7073e8beea
+		summarizeBy: none
+		sourceColumn: Tipo Cliente
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nombre Cliente'
+		dataType: string
+		lineageTag: 752954df-4be9-4931-afbf-135e51f62119
+		summarizeBy: none
+		sourceColumn: Nombre Cliente
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dirección Completa'
+		dataType: string
+		lineageTag: eae6800d-1c9d-49d5-b99a-de9223cdb1aa
+		summarizeBy: none
+		sourceColumn: Dirección Completa
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Calificación Cliente'
+		dataType: string
+		lineageTag: f3001fd7-db05-41db-b77e-560a34d0f62e
+		summarizeBy: none
+		sourceColumn: Calificación Cliente
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Clientes = m
+		mode: import
+		source =
+				let
+				    Origen = Folder.Files("C:\Users\mauri\OneDrive\Escritorio\Prueba 1 PB Avanzado\Datos"),
+				    #"C:\Users\mauri\OneDrive\Escritorio\Prueba 1 PB Avanzado\Datos\_DimClientes xlsx1" = Origen{[#"Folder Path"="C:\Users\mauri\OneDrive\Escritorio\Prueba 1 PB Avanzado\Datos\",Name="DimClientes.xlsx"]}[Content],
+				    #"Libro de Excel importado" = Excel.Workbook(#"C:\Users\mauri\OneDrive\Escritorio\Prueba 1 PB Avanzado\Datos\_DimClientes xlsx1"),
+				    Clientes_Sheet = #"Libro de Excel importado"{[Item="Clientes",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Clientes_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"RUT", type text}, {"Paterno", type text}, {"Materno", type text}, {"Nombre", type text}, {"Dirección", type text}, {"Comuna", type text}, {"Tipo Cliente", Int64.Type}}),
+				    #"Agregar columna personalizada" = Table.AddColumn(#"Tipo cambiado", "Nombre Cliente", each let splitNombre = Splitter.SplitTextByDelimiter(" ", QuoteStyle.None)([Nombre]) in Text.Combine({splitNombre{0}?, " ", [Paterno], " ", Text.Reverse(Text.Middle(Text.Reverse([Materno]), 1))}), type text),
+				    #"Columna combinada insertada" = Table.AddColumn(#"Agregar columna personalizada", "Dirección Completa", each Text.Combine({[Dirección], ", ", [Comuna], ", Chile"}), type text),
+				    #"Texto en mayúsculas" = Table.TransformColumns(#"Columna combinada insertada",{{"Dirección Completa", Text.Upper, type text}}),
+				    #"Columna condicional agregada" = Table.AddColumn(#"Texto en mayúsculas", "Calificación Cliente", each if [Tipo Cliente] = 2 then "Cliente Normal" else if [Tipo Cliente] = 1 then "Buen Cliente" else if [Tipo Cliente] = 3 then "Mal Cliente" else null, type text)
+				in
+				    #"Columna condicional agregada"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

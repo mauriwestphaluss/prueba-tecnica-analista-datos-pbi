@@ -1,0 +1,7 @@
+role GENERO_NORMAL
+	modelPermission: read
+
+	tablePermission Datos = [Nombre Género] == "NORMAAL"
+
+	annotation PBI_Id = 8c43ca66381c4e21a1a5d1e9cd1029e6
+
